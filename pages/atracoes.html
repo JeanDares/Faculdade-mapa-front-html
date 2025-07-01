@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Descubra as principais atrações turísticas da Serra Gaúcha: Gramado, Canela, parques temáticos, cachoeiras e pontos turísticos imperdíveis.">
+    <meta name="keywords"
+        content="atrações Serra Gaúcha, pontos turísticos, Gramado, Canela, Caracol, turismo RS, parques temáticos">
+    <meta name="author" content="Serra Gaúcha Turismo">
+
+    <title>Atrações Turísticas da Serra Gaúcha | Serra Gaúcha Turismo</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top scrolled" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="fas fa-mountain"></i>
+                <span>Serra Gaúcha</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                            <i class="fas fa-home"></i> Início
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">
+                            <i class="fas fa-info-circle"></i> Sobre a Região
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="atracoes.html">
+                            <i class="fas fa-camera"></i> Atrações
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gastronomia.html">
+                            <i class="fas fa-utensils"></i> Gastronomia
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">
+                            <i class="fas fa-envelope"></i> Contato
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-background"
+            style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=600&fit=crop');">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1 class="page-title" data-aos="fade-up">
+                            <span class="text-accent">Atrações</span> Imperdíveis
+                        </h1>
+                        <p class="page-subtitle" data-aos="fade-up" data-aos-delay="200">
+                            Descubra os pontos turísticos mais encantadores da Serra Gaúcha
+                        </p>
+                        <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="400">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a href="../index.html">Início</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Atrações</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filtros de Atrações -->
+    <section class="filtros-section py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="filtros-container">
+                        <h5 class="mb-3">Filtrar por categoria:</h5>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-filter="all">
+                                <i class="fas fa-globe"></i> Todas
+                            </button>
+                            <button class="filter-btn" data-filter="natureza">
+                                <i class="fas fa-tree"></i> Natureza
+                            </button>
+                            <button class="filter-btn" data-filter="aventura">
+                                <i class="fas fa-hiking"></i> Aventura
+                            </button>
+                            <button class="filter-btn" data-filter="cultura">
+                                <i class="fas fa-landmark"></i> Cultura
+                            </button>
+                            <button class="filter-btn" data-filter="familia">
+                                <i class="fas fa-heart"></i> Família
+                            </button>
+                            <button class="filter-btn" data-filter="gastronomia">
+                                <i class="fas fa-utensils"></i> Gastronomia
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Busca de Atrações -->
+    <section class="busca-section py-3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="search-container">
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="fas fa-search"></i>
+                            </span>
+                            <input type="text" class="form-control" id="searchInput" placeholder="Buscar atração...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Atrações Principais -->
+    <section class="atracoes-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Gramado -->
+                <div class="col-lg-4 col-md-6 filterable-item searchable-item" data-category="cultura">
+                    <div class="atracao-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="atracao-image">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop"
+                                alt="Gramado" loading="lazy">
+                            <div class="atracao-badge">
+                                <i class="fas fa-star"></i> 4.9
+                            </div>
+                            <div class="atracao-category">Cultura</div>
+                        </div>
+                        <div class="atracao-content">
+                            <h4>Centro de Gramado</h4>
+                            <p class="atracao-location">
+                                <i class="fas fa-map-marker-alt"></i> Gramado, RS
+                            </p>
+                            <p>O coração da cidade mais famosa da Serra Gaúcha, com arquitetura alemã, lojas charmosas e
+                                ambiente europeu.</p>
+                            <div class="atracao-features">
+                                <span class="feature-tag">
+                                    <i class="fas fa-store"></i> Compras
+                                </span>
+                                <span class="feature-tag">
+                                    <i class="fas fa-camera"></i> Fotos
+                                </span>
+                                <span class="feature-tag">
+                                    <i class="fas fa-walking"></i> Caminhada
+                                </span>
+                            </div>
+                            <div class="atracao-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>2-4 horas</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-dollar-sign"></i>
+                                    <span>Gratuito</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary w-100 mt-3" onclick="showAtracaoDetails('gramado')">
+                                <i class="fas fa-info-circle"></i> Ver Detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cascata do Caracol -->
+                <div class="col-lg-4 col-md-6 filterable-item searchable-item" data-category="natureza">
+                    <div class="atracao-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="atracao-image">
+                            <img src="https://images.unsplash.com/photo-1590736969955-71cc94901144?w=500&h=300&fit=crop"
+                                alt="Cascata do Caracol" loading="lazy">
+                            <div class="atracao-badge">
+                                <i class="fas fa-star"></i> 4.8
+                            </div>
+                            <div class="atracao-category">Natureza</div>
+                        </div>
+                        <div class="atracao-content">
+                            <h4>Cascata do Caracol</h4>
+                            <p class="atracao-location">
+                                <i class="fas fa-map-marker-alt"></i> Canela, RS
+                            </p>
+                            <p>Uma das cachoeiras mais famosas do Brasil, com 131 metros de altura e vista deslumbrante
+                                da mata nativa.</p>
+                            <div class="atracao-features">
+                                <span class="feature-tag">
+                                    <i class="fas fa-eye"></i> Mirante
+                                </span>
+                                <span class="feature-tag">
+                                    <i class="fas fa-tree"></i> Natureza
+                                </span>
+                                <span class="feature-tag">
+                                    <i class="fas fa-hiking"></i> Trilha
+                                </span>
+                            </div>
+                            <div class="atracao-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>1-2 horas</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-dollar-sign"></i>
+                                    <span>R$ 25</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary w-100 mt-3" onclick="showAtracaoDetails('caracol')">
+                                <i class="fas fa-info-circle"></i> Ver Detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mundo a Vapor -->
+                <div class="col-lg-4 col-md-6 filterable-item searchable-item" data-category="familia">
+                    <div class="atracao-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="atracao-image">
+                            <img src="https://images.unsplash.com/photo-1544112681-3e15fd20ee90?w=500&h=300&fit=crop"
+                                alt="Mundo a Vapor" loading="lazy">
+                            <div class="atracao-badge">
+                                <i class="fas fa-star"></i> 4.7
+                            </div>
+                            <div class="atracao-category">Família</div>
+                        </div>
+                        <div class="atracao-content">
+                            <h4>Mundo a Vapor</h4>
+                            <p class="atracao-location">
+                                <i class="fas fa-map-marker-alt"></i> Canela, RS
+                            </p>
+                            <p>Parque temático com miniaturas funcionais que reproduzem cenas do cotidiano movidas a
+                                vapor.</p>
+                            <div class="atracao-features">
+                                <span class="feature-tag">
+                                    <i class="fas fa-child"></i> Crianças
+                                </span>
+                                <span class="feature-tag">
+                                    <i class="fas fa-cog"></i> Tecnologia
+                                </span>
+                                <span class="feature-tag">
+                                    <i class="fas fa-users"></i> Família
+                                </span>
+                            </div>
+                            <div class="atracao-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>2-3 horas</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-dollar-sign"></i>
+                                    <span>R$ 45</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary w-100 mt-3" onclick="showAtracaoDetails('mundo-vapor')">
+                                <i class="fas fa-info-circle"></i> Ver Detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rota dos Vinhos -->
+                <div class="col-lg-4 col-md-6 filterable-item searchable-item" data-category="gastronomia">
+                    <div class="atracao-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="atracao-image">
+                            <img src="https://images.unsplash.com/photo-1572457480654-7b637c53c1df?w=500&h=300&fit=crop"
+                                alt="Rota dos Vinhos" loading="lazy">
+                            <div class="atracao-badge">
+                                <i class="fas fa-star"></i> 4.9
+                            </div>
+                            <div class="atracao-category">Gastronomia</div>
+                        </div>
+                        <div class="atracao-content">
+                            <h4>Rota dos Vinhos</h4>
+                            <p class="atracao-location">
+                                <i class="fas fa-map-marker-alt"></i> Bento Gonçalves, RS
+                            </p>
+                            <p>Roteiro pelas melhores vinícolas da região, com degustações e paisagens deslumbrantes dos
+                                vinhedos.</p>
+                            <div class="atracao-features">
+                                <span class="feature-tag">
+                                    <i class="fas fa-wine-glass-alt"></i> Vinhos
+                                </span>
+                                <span class="feature-tag">
+                                    <i class="fas fa-grape-cluster"></i> Vinícolas
+                                </span>
+                                <span class="feature-tag">
+                                    <i class="fas fa-utensils"></i> Degustação
+                                </span>
+                            </div>
+                            <div class="atracao-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Dia inteiro</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-dollar-sign"></i>
+                                    <span>R$ 80-150</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary w-100 mt-3" onclick="showAtracaoDetails('rota-vinhos')">
+                                <i class="fas fa-info-circle"></i> Ver Detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Parque do Lago Negro -->
+                <div class="col-lg-4 col-md-6 filterable-item searchable-item" data-category="natureza">
+                    <div class="atracao-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="atracao-image">
+                            <img src="https://www.gov.br/turismo/pt-br/assuntos/noticias/foto-da-semana-o-encantador-lago-negro-em-gramado-rs/GramadoMTur.png/@@images/7952eb55-08b5-42dd-a078-1b9504c2fed7.png"
+                                alt="Lago Negro" loading="lazy">
+                            <div class="atracao-badge">
+                                <i class="fas fa-star"></i> 4.6
+                            </div>
+                            <div class="atracao-category">Natureza</div>
+                        </div>
+                        <div class="atracao-content">
+                            <h4>Parque do Lago Negro</h4>
+                            <p class="atracao-location">
+                                <i class="fas fa-map-marker-alt"></i> Gramado, RS
+                            </p>
+                            <p>Lago artificial cercado por bosque de pinheiros, ideal para caminhadas e momentos de
+                                contemplação.</p>
+                            <div class="atracao-features">
+                                <span class="feature-tag">
+                                    <i class="fas fa-leaf"></i> Paisagem
+                                </span>
+                                <span class="feature-tag">
+                                    <i class="fas fa-walking"></i> Caminhada
+                                </span>
+                                <span class="feature-tag">
+                                    <i class="fas fa-camera"></i> Fotos
+                                </span>
+                            </div>
+                            <div class="atracao-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>1-2 horas</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-dollar-sign"></i>
+                                    <span>R$ 15</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary w-100 mt-3" onclick="showAtracaoDetails('lago-negro')">
+                                <i class="fas fa-info-circle"></i> Ver Detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Snowland -->
+                <div class="col-lg-4 col-md-6 filterable-item searchable-item" data-category="aventura">
+                    <div class="atracao-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="atracao-image">
+                            <img src="https://images.unsplash.com/photo-1551524164-6ca04ac833fb?w=500&h=300&fit=crop"
+                                alt="Snowland" loading="lazy">
+                            <div class="atracao-badge">
+                                <i class="fas fa-star"></i> 4.8
+                            </div>
+                            <div class="atracao-category">Aventura</div>
+                        </div>
+                        <div class="atracao-content">
+                            <h4>Snowland</h4>
+                            <p class="atracao-location">
+                                <i class="fas fa-map-marker-alt"></i> Gramado, RS
+                            </p>
+                            <p>Primeiro parque de neve indoor do Brasil, com esqui, snowboard e diversão na neve o ano
+                                todo.</p>
+                            <div class="atracao-features">
+                                <span class="feature-tag">
+                                    <i class="fas fa-snowflake"></i> Neve
+                                </span>
+                                <span class="feature-tag">
+                                    <i class="fas fa-skiing"></i> Esqui
+                                </span>
+                                <span class="feature-tag">
+                                    <i class="fas fa-fire"></i> Aventura
+                                </span>
+                            </div>
+                            <div class="atracao-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>3-4 horas</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-dollar-sign"></i>
+                                    <span>R$ 120</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary w-100 mt-3" onclick="showAtracaoDetails('snowland')">
+                                <i class="fas fa-info-circle"></i> Ver Detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mais atrações (repetindo padrão) -->
+                <div class="col-lg-4 col-md-6 filterable-item searchable-item" data-category="cultura">
+                    <div class="atracao-card" data-aos="fade-up" data-aos-delay="700">
+                        <div class="atracao-image">
+                            <img src="https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?w=500&h=300&fit=crop"
+                                alt="Igreja São Pedro" loading="lazy">
+                            <div class="atracao-badge">
+                                <i class="fas fa-star"></i> 4.5
+                            </div>
+                            <div class="atracao-category">Cultura</div>
+                        </div>
+                        <div class="atracao-content">
+                            <h4>Igreja São Pedro</h4>
+                            <p class="atracao-location">
+                                <i class="fas fa-map-marker-alt"></i> Gramado, RS
+                            </p>
+                            <p>Igreja histórica em estilo gótico com vitrais belíssimos e arquitetura única na região.
+                            </p>
+                            <div class="atracao-features">
+                                <span class="feature-tag">
+                                    <i class="fas fa-church"></i> História
+                                </span>
+                                <span class="feature-tag">
+                                    <i class="fas fa-palette"></i> Arte
+                                </span>
+                                <span class="feature-tag">
+                                    <i class="fas fa-peace"></i> Contemplação
+                                </span>
+                            </div>
+                            <div class="atracao-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>30 min</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-dollar-sign"></i>
+                                    <span>Gratuito</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary w-100 mt-3" onclick="showAtracaoDetails('igreja-sao-pedro')">
+                                <i class="fas fa-info-circle"></i> Ver Detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 filterable-item searchable-item" data-category="aventura">
+                    <div class="atracao-card" data-aos="fade-up" data-aos-delay="800">
+                        <div class="atracao-image">
+                            <img src="https://images.unsplash.com/photo-1504851149312-7a075b496cc5?w=500&h=300&fit=crop"
+                                alt="Trilha do Morro Pelado" loading="lazy">
+                            <div class="atracao-badge">
+                                <i class="fas fa-star"></i> 4.4
+                            </div>
+                            <div class="atracao-category">Aventura</div>
+                        </div>
+                        <div class="atracao-content">
+                            <h4>Trilha do Morro Pelado</h4>
+                            <p class="atracao-location">
+                                <i class="fas fa-map-marker-alt"></i> Canela, RS
+                            </p>
+                            <p>Trilha desafiadora com vista panorâmica de 360° da Serra Gaúcha. Ideal para aventureiros.
+                            </p>
+                            <div class="atracao-features">
+                                <span class="feature-tag">
+                                    <i class="fas fa-hiking"></i> Trilha
+                                </span>
+                                <span class="feature-tag">
+                                    <i class="fas fa-mountain"></i> Vista
+                                </span>
+                                <span class="feature-tag">
+                                    <i class="fas fa-running"></i> Desafio
+                                </span>
+                            </div>
+                            <div class="atracao-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>4-6 horas</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-dollar-sign"></i>
+                                    <span>Gratuito</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary w-100 mt-3" onclick="showAtracaoDetails('morro-pelado')">
+                                <i class="fas fa-info-circle"></i> Ver Detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 filterable-item searchable-item" data-category="familia">
+                    <div class="atracao-card" data-aos="fade-up" data-aos-delay="900">
+                        <div class="atracao-image">
+                            <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a8e?w=500&h=300&fit=crop"
+                                alt="Mini Mundo" loading="lazy">
+                            <div class="atracao-badge">
+                                <i class="fas fa-star"></i> 4.7
+                            </div>
+                            <div class="atracao-category">Família</div>
+                        </div>
+                        <div class="atracao-content">
+                            <h4>Mini Mundo</h4>
+                            <p class="atracao-location">
+                                <i class="fas fa-map-marker-alt"></i> Gramado, RS
+                            </p>
+                            <p>Parque com miniaturas perfeitas de cidades e monumentos famosos do mundo. Diversão
+                                garantida para toda família.</p>
+                            <div class="atracao-features">
+                                <span class="feature-tag">
+                                    <i class="fas fa-child"></i> Crianças
+                                </span>
+                                <span class="feature-tag">
+                                    <i class="fas fa-globe"></i> Miniaturas
+                                </span>
+                                <span class="feature-tag">
+                                    <i class="fas fa-users"></i> Família
+                                </span>
+                            </div>
+                            <div class="atracao-info">
+                                <div class="info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>2-3 horas</span>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-dollar-sign"></i>
+                                    <span>R$ 50</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary w-100 mt-3" onclick="showAtracaoDetails('mini-mundo')">
+                                <i class="fas fa-info-circle"></i> Ver Detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <button class="btn btn-outline-primary btn-lg" id="loadMoreBtn">
+                        <i class="fas fa-plus"></i> Carregar Mais Atrações
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa de Localização -->
+    <section class="mapa-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-4">
+                    <h2 class="section-title" data-aos="fade-up">Localize as Atrações</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+                        Veja onde estão localizadas as principais atrações da Serra Gaúcha
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12" data-aos="fade-up" data-aos-delay="400">
+                    <div id="map-container" class="map-container">
+                        <!-- Mapa será inserido aqui via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dicas de Viagem -->
+    <section class="dicas-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Dicas de Viagem</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+                        Aproveite ao máximo sua visita à Serra Gaúcha
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="dica-card">
+                        <div class="dica-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h5>Melhor Época</h5>
+                        <p>Abril a setembro para clima mais ameno. Dezembro a março para festivais e eventos especiais.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="dica-card">
+                        <div class="dica-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h5>Transporte</h5>
+                        <p>Carro próprio ou alugado é a melhor opção. Há também transfers e excursões organizadas.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="dica-card">
+                        <div class="dica-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h5>O que Levar</h5>
+                        <p>Roupas para frio (mesmo no verão), calçados confortáveis e protetor solar.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="dica-card">
+                        <div class="dica-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h5>Tempo Ideal</h5>
+                        <p>3 a 5 dias para conhecer as principais atrações com tranquilidade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <h2 class="mb-4">Pronto para Sua Aventura?</h2>
+                    <p class="mb-4 lead">Entre em contato conosco e monte seu roteiro personalizado pela Serra Gaúcha!
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="contato.html" class="btn btn-accent btn-lg me-3">
+                            <i class="fas fa-envelope"></i> Entre em Contato
+                        </a>
+                        <a href="gastronomia.html" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-utensils"></i> Ver Gastronomia
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="footer-brand">
+                        <h5><i class="fas fa-mountain"></i> Serra Gaúcha Turismo</h5>
+                        <p>Seu guia completo para descobrir as belezas da Serra Gaúcha. Paisagens, gastronomia e
+                            experiências únicas te aguardam!</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <h6>Navegação</h6>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="atracoes.html">Atrações</a></li>
+                        <li><a href="gastronomia.html">Gastronomia</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <h6>Destinos</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Gramado</a></li>
+                        <li><a href="#">Canela</a></li>
+                        <li><a href="#">Bento Gonçalves</a></li>
+                        <li><a href="#">Nova Petrópolis</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <h6>Contato</h6>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-envelope"></i> contato@serragaucha.com</p>
+                        <p><i class="fas fa-phone"></i> (54) 3000-0000</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Serra Gaúcha, RS</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Serra Gaúcha Turismo. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Desenvolvido com <i class="fas fa-heart text-danger"></i> para promover nossa região
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- AOS - Animate On Scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- JavaScript Personalizado -->
+    <script src="../js/script.js"></script>
+
+    <script>
+        // Função para mostrar detalhes da atração
+        function showAtracaoDetails(atracaoId) {
+            const atracoes = {
+                'gramado': {
+                    title: 'Centro de Gramado',
+                    content: `
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=300&fit=crop" class="img-fluid rounded mb-3" alt="Gramado">
+                        <h5>Sobre a Atração</h5>
+                        <p>O centro de Gramado é o coração pulsante da cidade mais famosa da Serra Gaúcha. Com sua arquitetura europeia inspirada nas tradições alemãs, o local oferece uma experiência única de compras, gastronomia e cultura.</p>
+                        
+                        <h6>O que fazer:</h6>
+                        <ul>
+                            <li>Passear pela Rua Coberta</li>
+                            <li>Visitar as chocolaterias artesanais</li>
+                            <li>Fotografar a arquitetura típica</li>
+                            <li>Fazer compras nas lojas locais</li>
+                        </ul>
+                        
+                        <h6>Informações práticas:</h6>
+                        <p><strong>Horário:</strong> 24h (lojas: 9h às 22h)<br>
+                        <strong>Entrada:</strong> Gratuita<br>
+                        <strong>Dica:</strong> Visite no final da tarde para ver a iluminação especial</p>
+                    `
+                },
+                'caracol': {
+                    title: 'Cascata do Caracol',
+                    content: `
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgiqlQG4OLtlXRmMOZvc_Yu-S_nl956gLRloaBDU7UsyUBxnvAFGpaihWTV9O-OnFAE6U&usqp=CAU">
+                        <h5>Sobre a Atração</h5>
+                        <p>A Cascata do Caracol é uma das cachoeiras mais impressionantes do Brasil, com seus 131 metros de queda livre. Localizada no Parque do Caracol, oferece uma experiência única de contato com a natureza preservada da Serra Gaúcha.</p>
+                        
+                        <h6>O que fazer:</h6>
+                        <ul>
+                            <li>Admirar a cachoeira do mirante principal</li>
+                            <li>Fazer a trilha até a base da cachoeira</li>
+                            <li>Visitar o observatório</li>
+                            <li>Comprar artesanato local</li>
+                        </ul>
+                        
+                        <h6>Informações práticas:</h6>
+                        <p><strong>Horário:</strong> 8h30 às 18h<br>
+                        <strong>Entrada:</strong> R$ 25,00<br>
+                        <strong>Dica:</strong> Use calçados antiderrapantes para a trilha</p>
+                    `
+                }
+                // Adicionar mais atrações conforme necessário
+            };
+
+            const atracao = atracoes[atracaoId];
+            if (atracao) {
+                createModal(atracao.title, atracao.content, 'lg');
+            }
+        }
+
+        // Inicializar funcionalidades específicas da página
+        $(document).ready(function () {
+            // Já inicializado no script.js principal
+        });
+    </script>
+
+    <style>
+        /* Estilos específicos para a página de atrações */
+        .filtros-container {
+            background: white;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-light);
+        }
+
+        .filter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .filter-btn {
+            background: white;
+            border: 2px solid #e9ecef;
+            color: var(--text-dark);
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .search-container {
+            margin-bottom: 20px;
+        }
+
+        .search-container .input-group-text {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+        }
+
+        .atracao-card {
+            background: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-light);
+            transition: var(--transition);
+            height: 100%;
+        }
+
+        .atracao-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-heavy);
+        }
+
+        .atracao-image {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .atracao-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .atracao-card:hover .atracao-image img {
+            transform: scale(1.1);
+        }
+
+        .atracao-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .atracao-badge i {
+            color: var(--accent-color);
+            margin-right: 5px;
+        }
+
+        .atracao-category {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: var(--accent-color);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .atracao-content {
+            padding: 25px;
+        }
+
+        .atracao-content h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        .atracao-location {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .atracao-location i {
+            color: var(--accent-color);
+            margin-right: 5px;
+        }
+
+        .atracao-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 15px 0;
+        }
+
+        .feature-tag {
+            background: var(--bg-light);
+            color: var(--text-dark);
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .feature-tag i {
+            color: var(--primary-color);
+        }
+
+        .atracao-info {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .info-item i {
+            color: var(--accent-color);
+        }
+
+        .map-container {
+            height: 400px;
+            background: #f8f9fa;
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #dee2e6;
+        }
+
+        .map-placeholder {
+            text-align: center;
+            color: var(--text-light);
+            cursor: pointer;
+            transition: var(--transition);
+            padding: 40px;
+        }
+
+        .map-placeholder:hover {
+            color: var(--primary-color);
+        }
+
+        .dica-card {
+            background: white;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-light);
+            text-align: center;
+            height: 100%;
+            transition: var(--transition);
+        }
+
+        .dica-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .dica-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient-accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+
+        .dica-icon i {
+            color: white;
+            font-size: 1.8rem;
+        }
+
+        .dica-card h5 {
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+
+        .dica-card p {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .filter-buttons {
+                justify-content: center;
+            }
+
+            .filter-btn {
+                font-size: 0.9rem;
+                padding: 8px 15px;
+            }
+
+            .atracao-features {
+                justify-content: center;
+            }
+
+            .atracao-info {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+        }
+    </style>
+</body>
+
+</html>

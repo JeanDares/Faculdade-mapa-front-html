@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Descubra as belezas da Serra Gaúcha - pontos turísticos, gastronomia típica, vinhos e paisagens deslumbrantes. Seu guia completo para o turismo na região.">
+    <meta name="keywords"
+        content="Serra Gaúcha, turismo, Gramado, Canela, vinhos, gastronomia, pontos turísticos, Rio Grande do Sul">
+    <meta name="author" content="Serra Gaúcha Turismo">
+    <meta property="og:title" content="Serra Gaúcha Turismo - Descubra as Belezas da Região">
+    <meta property="og:description"
+        content="Explore os melhores pontos turísticos, gastronomia e paisagens da Serra Gaúcha">
+    <meta property="og:type" content="website">
+
+    <title>Serra Gaúcha Turismo - Descubra as Belezas da Região</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h3>Carregando as belezas da Serra Gaúcha...</h3>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-mountain"></i>
+                <span>Serra Gaúcha</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            <i class="fas fa-home"></i> Início
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/sobre.html">
+                            <i class="fas fa-info-circle"></i> Sobre a Região
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/atracoes.html">
+                            <i class="fas fa-camera"></i> Atrações
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/gastronomia.html">
+                            <i class="fas fa-utensils"></i> Gastronomia
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contato.html">
+                            <i class="fas fa-envelope"></i> Contato
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-10">
+                        <h1 class="hero-title" data-aos="fade-up">
+                            Descubra a Magia da <span class="text-accent">Serra Gaúcha</span>
+                        </h1>
+                        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                            Paisagens deslumbrantes, gastronomia única e experiências inesquecíveis te aguardam na
+                            região mais charmosa do Rio Grande do Sul
+                        </p>
+                        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                            <a href="pages/atracoes.html" class="btn btn-primary btn-lg me-3">
+                                <i class="fas fa-binoculars"></i> Explorar Atrações
+                            </a>
+                            <a href="#destaques" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-arrow-down"></i> Saiba Mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Destaques Section -->
+    <section id="destaques" class="section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">
+                        Por que Visitar a Serra Gaúcha?
+                    </h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+                        Uma região que encanta com sua diversidade e beleza natural
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <h4>Paisagens Únicas</h4>
+                        <p>Montanhas verdejantes, vales floridos e cenários que parecem saídos de um conto de fadas.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-wine-glass-alt"></i>
+                        </div>
+                        <h4>Vinhos Premiados</h4>
+                        <p>A maior região vinícola do Brasil, com vinícolas familiares e rótulos reconhecidos
+                            mundialmente.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h4>Gastronomia Típica</h4>
+                        <p>Sabores únicos da imigração alemã e italiana, com pratos tradicionais e cafés coloniais.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-thermometer-three-quarters"></i>
+                        </div>
+                        <h4>Clima Agradável</h4>
+                        <p>Temperaturas amenas durante todo o ano, perfeitas para qualquer época de visita.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <h4>Natureza Preservada</h4>
+                        <p>Parques nacionais, trilhas ecológicas e uma biodiversidade rica para os amantes da natureza.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4>Hospitalidade</h4>
+                        <p>Povo acolhedor que recebe os visitantes com carinho e tradições preservadas há gerações.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cidades Principais -->
+    <section class="cidades-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">
+                        Principais Destinos
+                    </h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+                        Conheça as cidades mais encantadoras da Serra Gaúcha
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cidade-card">
+                        <div class="cidade-image">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop"
+                                alt="Gramado" loading="lazy">
+                            <div class="cidade-overlay">
+                                <h4>Gramado</h4>
+                                <p>A cidade mais famosa da Serra Gaúcha</p>
+                                <a href="pages/atracoes.html" class="btn btn-light btn-sm">
+                                    <i class="fas fa-eye"></i> Explorar
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cidade-info">
+                            <h5>Gramado</h5>
+                            <p>Conhecida pela arquitetura alemã, chocolaterias artesanais e o famoso Festival de Cinema.
+                            </p>
+                            <div class="cidade-stats">
+                                <span><i class="fas fa-star"></i> 4.8/5</span>
+                                <span><i class="fas fa-map-marker-alt"></i> 120km de Porto Alegre</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cidade-card">
+                        <div class="cidade-image">
+                            <img src="https://images.unsplash.com/photo-1590736969955-71cc94901144?w=500&h=300&fit=crop"
+                                alt="Canela" loading="lazy">
+                            <div class="cidade-overlay">
+                                <h4>Canela</h4>
+                                <p>Natureza exuberante e aventura</p>
+                                <a href="pages/atracoes.html" class="btn btn-light btn-sm">
+                                    <i class="fas fa-eye"></i> Explorar
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cidade-info">
+                            <h5>Canela</h5>
+                            <p>Lar do Parque do Caracol, com suas cachoeiras espetaculares e trilhas na natureza.</p>
+                            <div class="cidade-stats">
+                                <span><i class="fas fa-star"></i> 4.7/5</span>
+                                <span><i class="fas fa-map-marker-alt"></i> 130km de Porto Alegre</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cidade-card">
+                        <div class="cidade-image">
+                            <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a8e?w=500&h=300&fit=crop"
+                                alt="Bento Gonçalves" loading="lazy">
+                            <div class="cidade-overlay">
+                                <h4>Bento Gonçalves</h4>
+                                <p>Capital brasileira do vinho</p>
+                                <a href="pages/gastronomia.html" class="btn btn-light btn-sm">
+                                    <i class="fas fa-wine-glass"></i> Degustar
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cidade-info">
+                            <h5>Bento Gonçalves</h5>
+                            <p>Região vinícola com vinícolas familiares e o famoso Trem do Vinho.</p>
+                            <div class="cidade-stats">
+                                <span><i class="fas fa-star"></i> 4.6/5</span>
+                                <span><i class="fas fa-map-marker-alt"></i> 130km de Porto Alegre</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiências -->
+    <section class="experiencias-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">
+                        Experiências Imperdíveis
+                    </h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+                        Viva momentos únicos na Serra Gaúcha
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="experiencia-card experiencia-destaque">
+                        <div class="experiencia-image">
+                            <img src="https://images.unsplash.com/photo-1572457480654-7b637c53c1df?w=600&h=400&fit=crop"
+                                alt="Degustação de Vinhos" loading="lazy">
+                        </div>
+                        <div class="experiencia-content">
+                            <div class="experiencia-category">Gastronomia</div>
+                            <h3>Rota dos Vinhos</h3>
+                            <p>Deguste os melhores vinhos do Brasil em vinícolas familiares com vista para os vinhedos.
+                            </p>
+                            <a href="pages/gastronomia.html" class="btn btn-primary">
+                                <i class="fas fa-wine-glass-alt"></i> Saber Mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-12" data-aos="fade-left" data-aos-delay="100">
+                            <div class="experiencia-card experiencia-pequena">
+                                <div class="experiencia-image">
+                                    <img src="https://images.unsplash.com/photo-1551524164-687a55dd1126?w=300&h=200&fit=crop"
+                                        alt="Café Colonial" loading="lazy">
+                                </div>
+                                <div class="experiencia-content">
+                                    <div class="experiencia-category">Tradição</div>
+                                    <h4>Café Colonial</h4>
+                                    <p>Saboreie a tradicional mesa farta com delícias alemãs e italianas.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12" data-aos="fade-left" data-aos-delay="200">
+                            <div class="experiencia-card experiencia-pequena">
+                                <div class="experiencia-image">
+                                    <img src="https://images.unsplash.com/photo-1504851149312-7a075b496cc5?w=300&h=200&fit=crop"
+                                        alt="Trilhas" loading="lazy">
+                                </div>
+                                <div class="experiencia-content">
+                                    <div class="experiencia-category">Aventura</div>
+                                    <h4>Trilhas e Cachoeiras</h4>
+                                    <p>Explore a natureza exuberante em trilhas deslumbrantes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h3 class="mb-3">Fique por Dentro das Novidades</h3>
+                    <p class="mb-0">Receba dicas exclusivas, promoções e novidades sobre a Serra Gaúcha direto no seu
+                        e-mail!</p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <form class="newsletter-form" id="newsletterForm">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Seu melhor e-mail"
+                                id="newsletterEmail" required>
+                            <button type="submit" class="btn btn-accent">
+                                <i class="fas fa-paper-plane"></i> Inscrever
+                            </button>
+                        </div>
+                        <div class="newsletter-message mt-2" id="newsletterMessage"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="footer-brand">
+                        <h5><i class="fas fa-mountain"></i> Serra Gaúcha Turismo</h5>
+                        <p>Seu guia completo para descobrir as belezas da Serra Gaúcha. Paisagens, gastronomia e
+                            experiências únicas te aguardam!</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <h6>Navegação</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="pages/sobre.html">Sobre</a></li>
+                        <li><a href="pages/atracoes.html">Atrações</a></li>
+                        <li><a href="pages/gastronomia.html">Gastronomia</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <h6>Destinos</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Gramado</a></li>
+                        <li><a href="#">Canela</a></li>
+                        <li><a href="#">Bento Gonçalves</a></li>
+                        <li><a href="#">Nova Petrópolis</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <h6>Contato</h6>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-envelope"></i> contato@serragaucha.com</p>
+                        <p><i class="fas fa-phone"></i> (54) 3000-0000</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Serra Gaúcha, RS</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Serra Gaúcha Turismo. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Desenvolvido com <i class="fas fa-heart text-danger"></i> para promover nossa região
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- AOS - Animate On Scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- JavaScript Personalizado -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
